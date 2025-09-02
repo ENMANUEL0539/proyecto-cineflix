@@ -3,12 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CineFlix - Películas Modernas</title>
+    <title>CineFlix serie-codex </title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <!-- Pega aquí TODO TU HTML (como lo pasaste antes) -->
+           <!-- Pega aquí TODO TU HTML (como lo pasaste antes) -->
+
+<!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <img src="assets/logo.png" alt="Logo CineFlix" width="50" height="50">
+                </a>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Buscar películas...">
+                    <button class="search-btn" onclick="performSearch()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    </button>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#movies">Películas</a></li>
+                        <li><a href="#series">Series</a></li>
+                        <li><a href="#about">Acerca de</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Descubre las Mejores Películas</h1>
+            <p>Explora nuestro catálogo de películas modernas y clásicas con calidad cinematográfica</p>
+        </div>
+    </section>
+
+    <!-- Movies Section -->
+    <section class="movies-section" id="movies">
+        <div class="container">
+            <h2 class="section-title">Películas Destacadas</h2>
+            <div class="movie-grid" id="movie-grid">
+                <!-- Movie Cards will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>CineFlix</h3>
+                    <p>Tu destino para las mejores películas y series del mundo. Disfruta de contenido de alta calidad con la mejor experiencia visual.</p>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/Comfort_joker" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/share/1E9XdTFX5b" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/comfortablejoker/profilecard/?igsh=MXFnbGJyZDBpcTNtaQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com/channel/UCp8wakc797cg6Y9mSh-NkSA" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.tiktok.com/@comfortable_joker?_t=ZS-8wPi8H6D2Xt&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Navegación</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#movies">Películas</a></li>
+                        <li><a href="#series">Series</a></li>
+                        <li><a href="#about">Acerca de</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Soporte</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Ayuda</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Términos de Servicio</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 CineFlix. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    
     <script src="script.js"></script>
     <!-- Solo si usas worker.js -->
     <!-- <script src="worker.js"></script> -->
