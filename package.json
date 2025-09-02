@@ -1,6 +1,5 @@
 {
   "scripts": {
-    "build": "echo 'Building project...'",
     "deploy": "wrangler pages deploy"
   }
 }
